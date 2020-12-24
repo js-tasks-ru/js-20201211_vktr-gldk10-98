@@ -12,6 +12,7 @@ export function createGetter(path) {
         for (let i = 0; i < pathObj.length; i++) {
 
             if (!result[pathObj[i]]) {
+                result = undefined;
                 break;
             }
 
